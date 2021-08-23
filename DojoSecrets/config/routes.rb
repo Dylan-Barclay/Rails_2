@@ -1,15 +1,8 @@
 Rails.application.routes.draw do
-  get 'likes/create'
-
-  get 'likes/destroy'
-
-  get 'secrets/index'
-
   resources :sessions, only: [:new, :create, :destroy]
   resources :users
   resources :secrets, only: [:index, :create, :destroy]
-  resources :likes, only: [:create, :destroy]
-  # The priority is based upon order of creation: first created -> highest priority.
+  resources :likes, only: [:create, :destroy]eated -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
