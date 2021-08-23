@@ -1,0 +1,8 @@
+<h1>Login Page</h1>
+<form action="/sessions/" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token%>">
+    <input type="text" name="user[:email]" placeholder = "Email">
+    <input type="password" name="user[:password]" placeholder = "Password">
+    <input type="submit" value="Login">
+</form>
+<p>Find me in app/views/sessions/new.html.erb</p>
